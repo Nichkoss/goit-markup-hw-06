@@ -5,6 +5,8 @@
 
     /* Text colors  */
     --white-color: #ffffff;
+    --white-60: rgba(255, 255, 255, 0.6);
+    --white-30: rgba(255, 255, 255, 0.3);
     --modal-white: #FCFCFC;
     --text-navyblue: #2E2F42;
     --text-slate: #434455;
@@ -265,7 +267,7 @@ button:hover,button:focus{
     margin-right: 120px;
 }
 
-.footer-social-title {
+.footer-subtitle {
     margin-bottom: 16px;
 
     font-weight: 500;
@@ -275,7 +277,9 @@ button:hover,button:focus{
 
     color: var(--white-color);
 }
-
+.footer-social {
+    margin-right: 80px;
+}
 .socials {
     display: flex;
     gap: 16px;
@@ -301,8 +305,61 @@ button:hover,button:focus{
     background-color: var(--success-green-100);
 }
 
+/*Footer form subscribe*/
 
-.socials-icon {}
+.section-subtitle {
+}
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+.footer-input {
+    padding: 0px 16px;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white-30);
+    border-radius: 4px;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: var(--white-60);
+}
+.footer-input:focus::placeholder {
+    display: block;
+    color: var(--white-color);
+}
+.footer-btn {
+    display: block;
+    position: relative;
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+
+    background-color: var(--activate-iris);
+    border-radius: 4px;
+    text-align: left;
+}
+.footer-btn-icon {
+    position: absolute;
+    top: 8px;
+    left: 116px;
+}
+
 /* Index HTML Main page*/
 
 /*Main page - Hero section*/
