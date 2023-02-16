@@ -356,6 +356,7 @@ button:hover,button:focus{
     background-color: var(--activate-iris);
     border-radius: 4px;
     text-align: left;
+    transition: background-color var(--anim);
 }
 .footer-btn-icon {
     position: absolute;
@@ -401,7 +402,6 @@ button:hover,button:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     color: var(--white-color);
-    transition: background-color var(--anim);
 }
 .hero-btn:hover, .hero-btn:active{
     background-color: var(--pressed-ocean);
@@ -582,7 +582,7 @@ button:hover,button:focus{
     background: var(--bg-light-cloud);
     color: var(--activate-iris);
     border: 1px solid var(--accent);
-    transition: color var(--anim), box-shadow var(--anim), background var(--anim);
+    transition: color var(--anim), box-shadow var(--anim), background-color var(--anim);
 }
 
 .ctg-btn:hover,
@@ -707,6 +707,8 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     box-shadow: none;
+
+    transition: background-color var(--anim);
 }
 .modal-btn:hover, .modal-btn:focus {
     background-color: var(--accent);
@@ -750,6 +752,7 @@ img {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: fill var(--anim), border-color var(--anim);
 }
 
 .modal-form-input:focus, .modal-comment:focus, .modal-form-input:not(:placeholder-shown), .modal-comment:not(:placeholder-shown) {
@@ -765,13 +768,14 @@ img {
     left: 16px;
     pointer-events: none;
     fill: var(--text-navyblue);
-    transition: var(--anim);
+    transition: fill var(--anim);
 }
 .modal-comment {
     outline: transparent;
     width: 100%;
     height: 120px;
     padding: 8px 16px;
+    margin-bottom: 12px;
 
     border: 1px solid var(--form-border-20);
     border-radius: 4px;
@@ -782,6 +786,7 @@ img {
     letter-spacing: 0.04em;
 
     color: var(--text-navyblue);
+    transition: border-color var(--anim);
 }
 .modal-comment::placeholder {
     font-weight: 500;
@@ -801,22 +806,22 @@ img {
 .modal-checkbox {
     display: block;
     outline: none;
-    margin-top: 12px;
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--text-navyblue);
     border-radius: 2px;
 
-    background-image: url(../images/icons.svg#checker);
+    background-image: url(../images/modal/checker.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0;
-    transition: var(--anim);
+    transition: background-color var(--anim), border-color var(--anim), background-size var(--anim);
 }
 .modal-checkbox:checked {
-  background-color: var(--pressed-ocean);
-  border-color: var(--pressed-ocean);
-  background-size: 12px;
+    background-image: url(../images/modal/checker.svg);
+    background-color: var(--pressed-ocean);
+    border-color: var(--pressed-ocean);
+    background-size: 12px;
 }
 .modal-form-accept {
     font-size: 12px;
@@ -843,4 +848,6 @@ img {
     background-color: var(--activate-iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition: background-color var(--anim);
 }
